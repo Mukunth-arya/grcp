@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+
+service Cgpa_Calculator{
+     rpc GetValue(ValueRequest) returns (ValueReponse);
+}
+
+message ValueRequest{
+
+    
+       int32 sub1 = 1;
+       int32 sub2 = 2 ;
+       int32 sub3 = 3 ;
+       int32 sub4 = 4; 
+    
+}
+
+message ValueReponse{
+    int32 finalvalue = 1;  
+}
